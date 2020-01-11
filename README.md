@@ -1,7 +1,7 @@
 # sbms-server
 School of Biomedical Sciences (HKU) server wiki repository
 
-Tommy is managing this server. Contact him for inquires: wongcht@hku.hk
+Tommy is managing this server. Contact him for inquiries: wongcht@hku.hk
 
 ## Login
 
