@@ -6,7 +6,7 @@ You can login the server via [ssh](https://en.wikipedia.org/wiki/Secure_Shell)
 by the following command line in your terminal:
 
 ```bat
-ssh 147.8.70.229
+ssh biomed1.sbms.hku.hk
 ```
 
 Alternatively, you can configure the ssh in your local file `~/.ssh/config` 
@@ -15,7 +15,7 @@ Alternatively, you can configure the ssh in your local file `~/.ssh/config`
 ```bat
 Host sbms
     User YourUserName
-    HostName 147.8.70.229
+    HostName biomed1.sbms.hku.hk
     ServerAliveInterval 5
 ```
 

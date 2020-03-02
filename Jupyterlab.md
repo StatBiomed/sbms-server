@@ -27,12 +27,17 @@ Inside the sever, do
 
 ## Lauch and Connect
 * On the server, from any folder Now Launch : `jupyter notebook`
-* On your local terminal run the following:
-  ```bat
-  ssh -N -L PORT:localhost:PORT user@147.8.70.229
-  ```
-* Go to your local browser and open https://localhost:PORT
+* On your local machine, open https://biomed1.sbms.hku.hk:PORT/lab/ in your 
+  browser, e.g., firefox. Note (lauch HKU VPN first if you are not within HKU 
+  network).
 
-Please, do not forget to put the letter `S` in https://localhost:PORT otherwise 
-you won't be able to use it. Also, Safari does not work well with this setup. 
-Use Firefox, Opera, Chrome, or IE instead.
+Please use `https` instead of `http` otherwise 
+you won't be able to use it. Also, Chrome does not work well with this setup. 
+Use Firefox, Safari, or others instead.
+
+Alternative lauch in local machine (optional, normally not needed): 
+  * On your local terminal run the following:
+    ```bat
+    ssh -N -L PORT:localhost:PORT user@biomed1.sbms.hku.hk
+    ```
+  * Go to your local browser and open https://localhost:PORT
