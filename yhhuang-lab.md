@@ -15,8 +15,8 @@ back upped.
 
 ## Project data
 Ideally project data should be stored in the lab directory for easier collaboration / navigation
-* Data for your project in lab: `/storage/yhhuang/users/$YOUR_USER_NAME`
-* Large project: `/storage/yhhuang/research/$PROJECT_NAME`
+* Data for your projects in lab: `/storage/yhhuang/users/$YOUR_USER_NAME`
+* Large projects for collaboration: `/storage/yhhuang/research/$PROJECT_NAME`
 * Shared common software or systems settings: `/storage/yhhuang/systems`
 * Shared common tools and packages: `/storage/yhhuang/tools`
 
