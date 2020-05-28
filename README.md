@@ -3,6 +3,9 @@ School of Biomedical Sciences (HKU) server wiki repository
 
 Tommy is managing this server. Contact him for inquiries: wongcht@hku.hk
 
+## Computing guidance for labs
+* For members in YH Huang lab, see [yhhuang-lab.md](yhhuang-lab.md) page.
+
 ## Login
 
 For login via ssh, read [SSH.md](./SSH.md) page.
