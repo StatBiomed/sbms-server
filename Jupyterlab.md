@@ -26,18 +26,20 @@ Inside the sever, do
   Replace PORT by any integer number between 8001 and 9999.
 
 ## Lauch and Connect
-* On the server, from any folder Now Launch : `jupyter notebook`
-* On your local machine, open https://biomed1.sbms.hku.hk:PORT/lab/ in your 
-  browser, e.g., firefox. Note (lauch HKU VPN first if you are not within HKU 
-  network).
+* **On server**, from any folder Now Launch : `jupyter lab` in conda base 
+  evironment
 
-Please use `https` instead of `http` otherwise 
-you won't be able to use it. Also, Chrome does not work well with this setup. 
-Use Firefox, Safari, or others instead.
+* **On local machine**: 
+  1. On your local terminal run the following:
+     ```bat
+     ssh -N -L PORT:localhost:PORT user@biomed1.sbms.hku.hk
+     ```
+  2. Go to your local browser and open https://localhost:PORT
 
-Alternative lauch in local machine (optional, normally not needed): 
-  * On your local terminal run the following:
-    ```bat
-    ssh -N -L PORT:localhost:PORT user@biomed1.sbms.hku.hk
-    ```
-  * Go to your local browser and open https://localhost:PORT
+     
+
+  Note, lauch HKU VPN first if you are not within HKU network. Please use `https` instead of `http` otherwise 
+  you won't be able to use it. Also, Chrome does not work well with this setup. 
+  Use Firefox, Safari, or others instead.
+
+* Alternatively On your local machine, open https://biomed1.sbms.hku.hk:PORT/lab/
