@@ -23,7 +23,10 @@ Inside the sever, do
    c.NotebookApp.port = PORT
    ```
 
-  Replace PORT by any integer number between 8001 and 9999.
+  Replace `PORT` by any integer number between 8001 and 9999.
+  
+  Also, replace `$HOME` to the aboslute path of your own HOME directory: 
+  `/home/YOUR_USER_NAME`
 
 ## Lauch and Connect
 * **On server**, from any folder Now Launch : `jupyter lab` in conda base 
