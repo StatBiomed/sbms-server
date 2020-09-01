@@ -1,7 +1,8 @@
 # sbms-server
 School of Biomedical Sciences (HKU) server wiki repository
 
-Tommy is managing this server. Contact him for inquiries: wongcht@hku.hk
+For official notices, creating user account, etc., please go to: 
+http://biomed1.sbms.hku.hk
 
 ## Computing guidance for labs
 * For members in YH Huang lab, see [yhhuang-lab.md](yhhuang-lab.md) page.
