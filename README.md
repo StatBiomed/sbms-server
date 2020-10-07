@@ -43,3 +43,11 @@ For using R from conda, read [R.md](./R.md) page.
 You may consider mount the files on one server (e.g., the CPU server) to another server (e.g., the GPU server) or to your local machine. 
 
 The NFS is not available, but your can use SSHFS for user level mounting files. See basic documentation of [SSHFS](https://wiki.archlinux.org/index.php/SSHFS).
+Example on mount files on CPU server to GPU server, you can run the following 
+line on GPU server:
+```bat
+sshfs YOURS@biomed1.sbms.hku.hk:/storage/yhhuang /home/YOURS/yhhuang -o idmap=user
+
+# Unmount files
+# fusermount -u /home/YOURS/yhhuang
+```
