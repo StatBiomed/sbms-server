@@ -35,7 +35,7 @@ can easily use jupyter lab, for which you need to register you R kernel first by
 the cool tool [IRKernel](https://irkernel.github.io/).
 
 Open your R as above (`~/.conda/env/r_env/bin/R`)
-```bat
+```R
 # change the name and displayname to your favorate
 R> IRkernel::installspec(name = 'ir33', displayname = 'R 3.3')
 ```
