@@ -31,6 +31,14 @@ pip install ipykernel
 python -m ipykernel install --user --name myenv --display-name "Python (myenv)"
 ```
 
+## VS Code
+Visual Studio Code is a handy tool to access to server, e.g., edit scripts, 
+running jobs.
+See more official instructions: 
+* https://code.visualstudio.com/docs/remote/ssh
+* https://code.visualstudio.com/docs/datascience/jupyter-notebooks
+
+
 ## Jupyter lab on server
 For connect to [Jupyter lab](https://jupyterlab.readthedocs.io) on server, 
 read [Jupyterlab.md](./Jupyterlab.md) page.

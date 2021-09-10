@@ -35,7 +35,7 @@ Inside the sever, do
 * **On local machine**: 
   1. On your local terminal run the following:
      ```bat
-     ssh -N -L PORT:localhost:PORT user@biomed1.sbms.hku.hk
+     ssh -N -L PORT:localhost:PORT user@hpc02.sbms.hku.hk
      ```
   2. Go to your local browser and open https://localhost:PORT
 
@@ -45,4 +45,4 @@ Inside the sever, do
   you won't be able to use it. Also, Chrome does not work well with this setup. 
   Use Firefox, Safari, or others instead.
 
-* Alternatively On your local machine, open https://biomed1.sbms.hku.hk:PORT/lab/
+* Alternatively On your local machine, open https://hpc02.sbms.hku.hk:PORT/lab/
