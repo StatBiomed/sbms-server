@@ -16,11 +16,11 @@ Inside the sever, do
 * Edit the file `jupyter_notebook_config.py` (it is in your current folder) to look like
 
    ```python
-   c.NotebookApp.certfile = u'$HOME/.jupyter/mycert.pem'
-   c.NotebookApp.keyfile = u'$HOME/.jupyter/mykey.key'
-   c.NotebookApp.ip = '*'
-   c.NotebookApp.open_browser = False
-   c.NotebookApp.port = PORT
+   c.ServerApp.certfile = u'$HOME/.jupyter/mycert.pem'
+   c.ServerApp.keyfile = u'$HOME/.jupyter/mykey.key'
+   c.ServerApp.ip = '*'
+   c.ServerApp.open_browser = False
+   c.ServerApp.port = PORT
    ```
 
   Replace `PORT` by any integer number between 8001 and 9999.
