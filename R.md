@@ -4,9 +4,14 @@
 R has been installed on school CPU server:
 `/opt/R/4.0.2/bin/R`
 
-Rstudio is also available from web browser (VPN required from outside HKU): http://biomed1.sbms.hku.hk:8787
+Rstudio is also available from web browser (VPN required from outside HKU): http://hpc01.sbms.hku.hk:8787 or http://hpc02.sbms.hku.hk:8787
 
 You are commend to use this R environment, together with Rstudio IDE.
+
+Alternatively, you can still use this kernel from terminal:
+```bash
+/opt/R/4.0.2/bin/R
+```
 
 ## Option 2: self-managed R from anaconda
 Different from systems R, you can also manage an R kernel yourself by using 
