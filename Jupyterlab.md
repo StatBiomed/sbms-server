@@ -11,7 +11,7 @@ Inside the sever, do
   `jupyter notebook password`
 * Create a certificate
   ```bat
-  openssl req -x509 -nodes -days 365 -newkey rsa:1024 -keyout mykey.key -out mycert.pem
+  openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout mykey.key -out mycert.pem
   ```
 * Edit the file `jupyter_notebook_config.py` (it is in your current folder) to look like
 
