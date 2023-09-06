@@ -17,8 +17,22 @@
 * Change the configuration setting
 * Add jupyter kernel with `ipykernel`
 
-## SRA/fastq at EBI database
-* Ruiyan add more links 
+## How to download raw fastq file
+* Method 1 : `prefetch $SRA_ID` & `fastq-sump --gzip`
+* Method 2 : Search the SRA_ID in EBI database & download by using `axel`
+* Method 3 : Search the SRA_ID in EBI database & download by using `ascp`
+  Example code:
+```bash
+#!/bin/bash
+
+for i in {51..52}
+do
+echo $i
+ascp -QT -l 300m -P33001 -i /home/houruiyan/.conda/envs/Py3/etc/asperaweb_id_dsa.openssh era-fasp@fasp.sra.ebi.ac.uk:/vol1/fastq/SRR116/0${i}/SRR116539${i}/SRR116539${i}_1.fastq.gz .
+ascp  -QT -l 300m -P33001 -i /home/houruiyan/.conda/envs/Py3/etc/asperaweb_id_dsa.openssh  era-fasp@fasp.sra.ebi.ac.uk:/vol1/fastq/SRR116/0${i}/SRR116539${i}/SRR116539${i}_2.fastq.gz .
+done
+```
+
 
 ## Misc
 * Python module auto reload [links ?]
