@@ -23,4 +23,4 @@
 ## Misc
 * Python module auto reload [links ?]
 * Using VS Codes on cluster ([Weizhong's note](https://dirt-fig-392.notion.site/Using-vscode-on-a-high-performance-cluster-400ddd3549b340ce9041f14c8616be9a?pvs=4)) and Jupyter on cluser ([jupyte tips](https://github.com/StatBiomed/sbms-server/blob/master/Jupyterlab.md#using-jupyter-on-computing-node-of-a-cluster))
-* Excel Table to Latex table (google sheet adds-on, or using R)
+* Excel Table to Latex table (google sheet adds-on (Spread-LaTeX), or using R)
