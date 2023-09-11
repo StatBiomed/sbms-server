@@ -1,3 +1,5 @@
+# Computing tips
+
 ## Running jobs in the background
 * Running jobs in the background with `screen`. [Anyone add some links or texts?]
 * `screen -S sessionname`, Creates a session named sessionname (sessionname is defined by yourself)
