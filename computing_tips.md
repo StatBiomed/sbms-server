@@ -1,7 +1,13 @@
-# Computing tips
+![image](https://github.com/StatBiomed/sbms-server/assets/64261429/a984007d-24e6-42d5-9e85-a4601abe46bc)# Computing tips
 
 ## Running jobs in the background
 * Running jobs in the background with `screen`. [Anyone add some links or texts?]
+* `screen -S sessionname`, Creates a session named sessionname (sessionname is defined by yourself)
+* `screen jupyter notebook`, Copy the link and open Jupyter Notebook on the browser (the same as `screen jupyter lab`)
+* `Ctrl + a + d`, Temporarily leave the current session, throw the current screen session to the background for execution, and return to the state before entering the screen. At this time, in the screen session, the process running in each window 	continues to execute, even if the logout does not affect
+* `screen -ls`, Display all current screen jobs
+* `screen -r sessionname`, Recover off-line screen job
+* `kill sessionnumber`, Exits the current screen window and ends the current screen window (Note: must be sessionnumber, not sessionname)
 
 ## IDE: PyCharm, VS Code, and Jupyter lab
 
