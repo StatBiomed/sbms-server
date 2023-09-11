@@ -7,7 +7,7 @@
 * `Ctrl + a + d`, Temporarily leave the current session, throw the current screen session to the background for execution, and return to the state before entering the screen. At this time, in the screen session, the process running in each window 	continues to execute, even if the logout does not affect
 * `screen -ls`, Display all current screen jobs
 * `screen -r sessionname`, Recover off-line screen job
-* `kill sessionnumber`, Exits the current screen window and ends the current screen window (Note: must be sessionnumber, not sessionname)
+* `kill sessionnumber`, Exits the current screen window and ends the current screen window
 
 ## IDE: PyCharm, VS Code, and Jupyter lab
 
