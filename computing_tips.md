@@ -1,5 +1,3 @@
-![image](https://github.com/StatBiomed/sbms-server/assets/64261429/a984007d-24e6-42d5-9e85-a4601abe46bc)# Computing tips
-
 ## Running jobs in the background
 * Running jobs in the background with `screen`. [Anyone add some links or texts?]
 * `screen -S sessionname`, Creates a session named sessionname (sessionname is defined by yourself)
