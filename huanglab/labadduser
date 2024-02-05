@@ -1,0 +1,23 @@
+#!/usr/bin/bash
+
+username=$1
+uid=$2
+
+if [ "$#" -le 0 ]; then
+    echo "try: labadduser username [uid]"
+    exit 1
+elif [ "$#" -eq 1 ]; then
+    sudo useradd -g yhlab -s /bin/bash -m $username
+else
+    sudo useradd -g yhlab -s /bin/bash -m -u $uid $username
+fi
+
+mkdir /ssd/users/$username /data/users/$username
+chown $username /ssd/users/$username /data/users/$username
+
+sudo ln -s /ssd/users/$username /home/$username/ssd
+sudo ln -s /data/users/$username /home/$username/data
+chown $username /home/$username/ssd /home/$username/data
+chgrp yhlab /home/$username/ssd /home/$username/data
+
+su $username -c '/opt/anaconda3/bin/conda init'
