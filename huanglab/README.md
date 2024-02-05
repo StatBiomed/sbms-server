@@ -29,7 +29,7 @@ readable lab-wide (not writeable):
 - Aim to mount `/storage` and `/storage3` to `/hpc01-sshfs`
 
 ## RStudio server
-- Directly available: 147.8.70.48:8787
+- Directly available (`http` not `https`): http://147.8.70.48:8787
 - See instructions on the [R.md](../R.md) page
 
 ## Anaconda
