@@ -30,12 +30,14 @@ Read more from [this blog](https://linuxize.com/post/how-to-create-users-in-linu
 
 ## Set the size limit for home directory for all users
 - Aim: 5GB by default
-- Not implemented yet
+- Too difficult to implemented (`/home` is not partitioned out from the system disc)
+- Now, we just set a reminder in each one's home directory
 
 
 ## Mount the file systems
-- Tried command: `sshfs hpc01.sbms.hku.hk:/storage /hpc01-sshfs/storage -o idmap=user`
-- Not successful for all users (only for the current user using the command)
+Worked with matched UID and with using `-o allow_other`
+- `sshfs hpc01.sbms.hku.hk:/storage /hpc01-sshfs/storage -o allow_other`
+- `sshfs hpc01.sbms.hku.hk:/storage3 /hpc01-sshfs/storage3 -o allow_other`
 
 
 ## Software installation

@@ -25,8 +25,7 @@ readable lab-wide (not writeable):
 `/ssd/users/YOU` and `/data/users/YOU`, respectively.
 
 ## Mount hpc01 files
-- We are still working on it (not successful for all members yet)
-- Aim to mount `/storage` and `/storage3` to `/hpc01-sshfs`
+- `/hpc01-sshfs/storage` for hpc01's `/storage` (same setting for `storage3`)
 
 ## RStudio server
 - Directly available (`http` not `https`): http://147.8.70.48:8787

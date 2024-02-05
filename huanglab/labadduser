@@ -20,4 +20,6 @@ sudo ln -s /data/users/$username /home/$username/data
 chown $username /home/$username/ssd /home/$username/data
 chgrp yhlab /home/$username/ssd /home/$username/data
 
+sudo ln -s /opt/home_5GB_limit.txt /home/$username/.
+
 su $username -c '/opt/anaconda3/bin/conda init'
