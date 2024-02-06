@@ -23,3 +23,4 @@ chgrp yhlab /home/$username/ssd /home/$username/data
 sudo ln -s /opt/home_5GB_limit.txt /home/$username/.
 
 su $username -c '/opt/anaconda3/bin/conda init'
+su $username -c 'conda config --add envs_dirs /ssd/users/$username/envs'

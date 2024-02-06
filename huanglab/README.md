@@ -40,6 +40,7 @@ readable lab-wide (not writeable):
 - See instructions on the [Jupyterlab.md](../Jupyterlab.md) page
 
 ## More tips
+- Monitor the temperature (for heavy GPU user): `sensors` command
 - See instructions on the [computing_tips.md](../computing_tips.md) page
 - See instructions on the [yhhuang-lab.md](../yhhuang-lab.md) page but mainly
   for **hpc01/02**

@@ -1,2 +1,3 @@
 - Please keep your home directory within 5GB (config will be implemented soon)
-- Please install your conda environment at /ssd/users/YOU
+- Please install your conda environment e.g., at /ssd/users/$USER
+- You can config: conda config --add envs_dirs /ssd/users/$USER/envs
