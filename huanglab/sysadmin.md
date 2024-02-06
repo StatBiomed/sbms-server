@@ -7,7 +7,7 @@
 The customised adduser has been implemented in `/usr/bin/labadduser`, so you 
 can add a user by this command line
 
-```bat
+```bash
     sudo su -
     labadduser new_user
     
@@ -16,7 +16,7 @@ can add a user by this command line
 ```
 
 To set the password for the new user and ideally initialise conda for her/him
-```bat
+```bash
     sudo passwd $new_user
     su $new_user -c '/opt/anaconda3/bin/conda init'
 ```
@@ -36,8 +36,15 @@ Read more from [this blog](https://linuxize.com/post/how-to-create-users-in-linu
 
 ## Mount the file systems
 Worked with matched UID and with using `-o allow_other`
-- `sshfs hpc01.sbms.hku.hk:/storage /hpc01-sshfs/storage -o allow_other`
-- `sshfs hpc01.sbms.hku.hk:/storage3 /hpc01-sshfs/storage3 -o allow_other`
+
+```bash
+    sshfs hpc01.sbms.hku.hk:/storage /storage -o allow_other
+    sshfs hpc01.sbms.hku.hk:/storage3 /storage3 -o allow_other
+    sshfs hpc01.sbms.hku.hk:/usersdata /usersdata -o allow_other
+
+    # Unmount files
+    # fusermount -u /storage /storage3 /usersdata
+```
 
 
 ## Software installation
