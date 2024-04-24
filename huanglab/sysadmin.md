@@ -8,17 +8,17 @@ The customised adduser has been implemented in `/usr/bin/labadduser`, so you
 can add a user by this command line
 
 ```bash
-    sudo su -
-    labadduser new_user
+sudo su -
+labadduser new_user
     
-    # or with uid
-    # labadduser new_user uid
+# or with uid
+# labadduser new_user uid
 ```
 
 To set the password for the new user and ideally initialise conda for her/him
 ```bash
-    sudo passwd $new_user
-    su $new_user -c '/opt/anaconda3/bin/conda init'
+sudo passwd $new_user
+su $new_user -c '/opt/anaconda3/bin/conda init'
 ```
 
 Read more from [this blog](https://linuxize.com/post/how-to-create-users-in-linux-using-the-useradd-command/)
@@ -38,12 +38,12 @@ Read more from [this blog](https://linuxize.com/post/how-to-create-users-in-linu
 Worked with matched UID and with using `-o allow_other`
 
 ```bash
-    sshfs hpc01.sbms.hku.hk:/storage /storage -o allow_other
-    sshfs hpc01.sbms.hku.hk:/storage3 /storage3 -o allow_other
-    sshfs hpc01.sbms.hku.hk:/usersdata /usersdata -o allow_other
+sshfs hpc01.sbms.hku.hk:/storage /storage -o allow_other
+sshfs hpc01.sbms.hku.hk:/storage3 /storage3 -o allow_other
+sshfs hpc01.sbms.hku.hk:/usersdata /usersdata -o allow_other
 
-    # Unmount files
-    # fusermount -u /storage /storage3 /usersdata
+# Unmount files
+# fusermount -u /storage /storage3 /usersdata
 ```
 
 
@@ -53,3 +53,25 @@ Worked with matched UID and with using `-o allow_other`
 - Anaconda: installed `/opt/anaconda3/`
 
 
+## Set password requirement
+
+HKU ITS's guideline:
+```html
+10 characters minimum, with at least
+1 uppercase
+1 lowercase
+1 number
+1 special character
+```
+
+With this [tutorial](https://computingforgeeks.com/enforce-strong-user-password-policy-ubuntu-debian/), 
+this can be set up by the following:
+
+```bash
+sudo vim /etc/pam.d/common-password
+
+# CHANGE the line 225 from
+# password   requisite   pam_pwquality.so retry=3
+# TO
+# password requisite pam_pwquality.so retry=3 minlen=10 maxrepeat=3 ucredit=-1 lcredit=-1 dcredit=-1 ocredit=-1 difok=3 gecoscheck=1 reject_username enforce_for_root
+```
