@@ -1,7 +1,7 @@
 # Welcome to Huang Lab computing server (woody)
 
 ## IP address
-- current IP address: `147.8.70.48`
+- current IP address: `10.64.152.35`
 - this is a dynamic address, which means it may change after reboot
 
 ## Login via ssh
@@ -31,7 +31,7 @@ readable lab-wide (not writeable):
   to this node (e.g., `/ssd` or `/data`)
 
 ## RStudio server
-- Directly available (`http` not `https`): http://147.8.70.48:8787
+- Directly available (`http` not `https`): http://10.64.152.35:8787
 - See instructions on the [R.md](../R.md) page
 
 ## Anaconda
