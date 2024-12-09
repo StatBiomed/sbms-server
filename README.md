@@ -39,9 +39,10 @@ See more official instructions:
 * https://code.visualstudio.com/docs/datascience/jupyter-notebooks
 
 
-## Jupyter lab on server
-For connect to [Jupyter lab](https://jupyterlab.readthedocs.io) on server, 
-read [Jupyterlab.md](./Jupyterlab.md) page.
+## JupyterHub or JupyterLab on server
+* For **JupyterHub**, you can directly use it from http://hpc01.sbms.hku.hk:8000 or http://hpc02.sbms.hku.hk:8000
+* For **JupyterLab**, you can connect to [Jupyter lab](https://jupyterlab.readthedocs.io) on the server
+  by manual setup, please read [Jupyterlab.md](./Jupyterlab.md) page for more information.
 
 ## R
 For using R from conda, read [R.md](./R.md) page.
