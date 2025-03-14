@@ -75,3 +75,33 @@ sudo vim /etc/pam.d/common-password
 # TO
 # password requisite pam_pwquality.so retry=3 minlen=10 maxrepeat=3 ucredit=-1 lcredit=-1 dcredit=-1 ocredit=-1 difok=3 gecoscheck=1 reject_username enforce_for_root
 ```
+
+## Change .cache from home director to disk
+
+Edit the via `sudo vi /etc/profile` by adding this line
+
+```
+export XDG_CACHE_HOME="/ssd/users/$USER/.cache"
+```
+
+## Reboot
+
+For restart: `sudo reboot`
+
+
+
+
+### Jupyter Hub (unsuccessful yet)
+- JupyterHub via its [documentation](https://jupyterhub.readthedocs.io/en/stable/tutorial/quickstart.html):
+  ```
+  sudo apt-get install nodejs npm
+  sudo /opt/anaconda3/bin/conda install -c conda-forge jupyterhub
+  sudo pip install notebook
+
+  sudo mkdir /etc/jupyterhub/
+  sudo /opt/anaconda3/bin/jupyterhub --generate-config -f /etc/jupyterhub/jupyterhub_config.py
+
+  sudo /opt/anaconda3/bin/jupyterhub --ip 10.64.152.100 --port 443 -f /etc/jupyterhub/jupyterhub_config.py
+
+  sudo /opt/anaconda3/bin/jupyterhub --ip 10.64.152.100 --port 443 --Spawner.cmd='/opt/anaconda3/bin/jupyterhub-singleuser' --Authenticator.allow_all = True
+  ```
