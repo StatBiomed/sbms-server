@@ -92,16 +92,4 @@ For restart: `sudo reboot`
 
 
 ### Jupyter Hub (unsuccessful yet)
-- JupyterHub via its [documentation](https://jupyterhub.readthedocs.io/en/stable/tutorial/quickstart.html):
-  ```
-  sudo apt-get install nodejs npm
-  sudo /opt/anaconda3/bin/conda install -c conda-forge jupyterhub
-  sudo pip install notebook
-
-  sudo mkdir /etc/jupyterhub/
-  sudo /opt/anaconda3/bin/jupyterhub --generate-config -f /etc/jupyterhub/jupyterhub_config.py
-
-  sudo /opt/anaconda3/bin/jupyterhub --ip 10.64.152.100 --port 443 -f /etc/jupyterhub/jupyterhub_config.py
-
-  sudo /opt/anaconda3/bin/jupyterhub --ip 10.64.152.100 --port 443 --Spawner.cmd='/opt/anaconda3/bin/jupyterhub-singleuser' --Authenticator.allow_all = True
-  ```
+See more in the [./jupyterhub_notes.md](./jupyterhub_notes.md)
