@@ -91,5 +91,9 @@ For restart: `sudo reboot`
 
 
 
-### Jupyter Hub (unsuccessful yet)
-See more in the [./jupyterhub_notes.md](./jupyterhub_notes.md)
+### JupyterHub
+
+Not success on woody yet, due to network issue (different IP address between 
+SSH and ifconfig)
+
+See more details in the [./jupyterhub_notes.md](./jupyterhub_notes.md)
