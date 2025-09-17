@@ -81,7 +81,7 @@ sudo vim /etc/pam.d/common-password
 Edit the via `sudo vi /etc/profile` by adding this line
 
 ```
-export XDG_CACHE_HOME="/ssd/users/$USER/.cache"
+export XDG_CACHE_HOME="/data/users/$USER/.cache"
 ```
 
 ## Reboot
